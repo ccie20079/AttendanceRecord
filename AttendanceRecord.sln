@@ -9,8 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckUser", "CheckUser\Chec
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{8F4FF34A-811B-44C9-B3DD-0804E9A38071}"
 	ProjectSection(SolutionItems) = preProject
+		C:\Users\Administrator\Desktop\191023.sql = C:\Users\Administrator\Desktop\191023.sql
 		SQL\Readme.txt = SQL\Readme.txt
-		SQL\UserName_Dukepu.sql = SQL\UserName_Dukepu.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2DD33123-C9BF-4337-8D3D-2F688CAE959F}"
