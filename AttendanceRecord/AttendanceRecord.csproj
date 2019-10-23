@@ -292,6 +292,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\apps.ico" />
+    <None Include="bin\Debug\blank.ico" />
     <None Include="Document\AttendanceRecord.doc" />
     <None Include="Document\AttendanceRecord_english.doc" />
     <None Include="flexflow.cfg" />
@@ -344,10 +346,9 @@
   <ItemGroup>
     <Content Include="apps.ico" />
     <Content Include="BaseDao.csproj" />
+    <Content Include="bin\Debug\blank_previous.ico" />
     <Content Include="Document\AttendanceRecord_english.txt" />
     <Content Include="Resources\blank.ico" />
-    <None Include="bin\Debug\blank.ico" />
-    <None Include="bin\Debug\apps.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
