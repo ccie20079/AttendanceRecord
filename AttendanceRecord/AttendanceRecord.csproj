@@ -53,8 +53,7 @@
     <StartupObject>AttendanceRecord.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Excel, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Excel">
       <HintPath>..\..\Excel\Excel\bin\Debug\Excel.dll</HintPath>
     </Reference>
     <Reference Include="Oracle.DataAccess, Version=2.102.2.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
@@ -208,6 +207,11 @@
       <DependentUpon>7SWED.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\AttendanceTimeHelper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\V_ActualAttendanceDays.cs" />
     <Compile Include="Helper\ASK_For_Leave_Helper.cs" />
     <Compile Include="Helper\AttendanceRHelper.cs" />
@@ -284,14 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="bin\Debug\a.bat" />
     <None Include="bin\Debug\AttendanceRecord.vshost.exe.manifest" />
     <None Include="bin\Debug\AttendanceRecord_english.doc" />
@@ -365,6 +364,7 @@
     <Content Include="bin\Debug\Tools.xml" />
     <Content Include="bin\Debug\version.txt" />
     <Content Include="Document\AttendanceRecord_english.txt" />
+    <Content Include="Resources\apps.ico" />
     <Content Include="Resources\blank.ico" />
   </ItemGroup>
   <ItemGroup>

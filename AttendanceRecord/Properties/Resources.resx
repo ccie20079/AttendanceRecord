@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\apps.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\apps.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DEPT" xml:space="preserve">
     <value>部门</value>
@@ -150,6 +150,6 @@
     <value>D:\Projects\AttendanceRecord\AttendanceRecord\bin\Debug</value>
   </data>
   <data name="blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\blank.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\blank.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
