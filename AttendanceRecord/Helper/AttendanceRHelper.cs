@@ -42,7 +42,6 @@ namespace AttendanceRecord.Helper
             //打开该文档。
             myExcel.open();
             #region 获取该工作簿中，行数最少的表格。
-
             #endregion
             //只获取第一个表格。
             Worksheet ws = myExcel.getFirstWorkSheetAfterOpen();
@@ -53,9 +52,6 @@ namespace AttendanceRecord.Helper
             pb.Value = 0;
             pb.Visible = true;
             lblPrompt.Visible = true;
-            
-
-
             AttendanceR.Sheet_name = ws.Name;
             //判断首行是否为 考勤记录表;以此判断此表是否为考勤记录表.
             string A1Str =((Range)ws.Cells[1, 1]).Text.ToString().Trim().Replace("\n","").Replace("\r","").Replace(" ","");

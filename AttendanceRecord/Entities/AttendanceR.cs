@@ -720,8 +720,6 @@ namespace AttendanceRecord.Entities
             param_fpt_last_time.Value = this._FPT_Last_Time;
             param_file_path.Value = AttendanceR._file_path;
             param_random_str.Value = AttendanceR._random_Str;
-
-
             OracleParameter[] paramters = new OracleParameter[12] {
                                      param_affected_count,
                                      param_start_date,
