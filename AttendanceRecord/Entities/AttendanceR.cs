@@ -15,8 +15,8 @@ namespace AttendanceRecord.Entities
        static string  _start_date; 
        static string  _end_date; 
        static string  _tabulation_time;
-        static string _file_path;
-        static  string _sheet_name;
+       static string _file_path;
+       static  string _sheet_name;
        static char _prefix_Job_Number;
       
        string _fingerprint_Date;

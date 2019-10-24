@@ -291,14 +291,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="bin\Debug\a.bat" />
-    <None Include="bin\Debug\AttendanceRecord.vshost.exe.manifest" />
-    <None Include="bin\Debug\AttendanceRecord_english.doc" />
-    <None Include="bin\Debug\flexflow.cfg" />
-    <None Include="bin\Debug\run.bat" />
-    <None Include="bin\Debug\sqlnet.log" />
     <None Include="Document\AttendanceRecord.doc" />
     <None Include="Document\AttendanceRecord_english.doc" />
+    <None Include="flexflow.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -346,35 +343,33 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="apps.ico" />
+    <Content Include="apps.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="BaseDao.csproj" />
-    <Content Include="bin\Debug\apps.ico" />
-    <Content Include="bin\Debug\AttendanceRecord.exe" />
-    <Content Include="bin\Debug\AttendanceRecord.pdb" />
-    <Content Include="bin\Debug\AttendanceRecord_english.txt" />
-    <Content Include="bin\Debug\blank.ico" />
-    <Content Include="bin\Debug\blank_previous.ico" />
-    <Content Include="bin\Debug\Excel.dll" />
-    <Content Include="bin\Debug\Excel.pdb" />
-    <Content Include="bin\Debug\MySql.Data.dll" />
-    <Content Include="bin\Debug\Oracle.DataAccess.dll" />
-    <Content Include="bin\Debug\stdole.dll" />
-    <Content Include="bin\Debug\Tools.dll" />
-    <Content Include="bin\Debug\Tools.pdb" />
-    <Content Include="bin\Debug\Tools.xml" />
-    <Content Include="bin\Debug\version.txt" />
+    <Content Include="blank.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Document\AttendanceRecord_english.txt" />
     <Content Include="Resources\apps.ico" />
     <Content Include="Resources\blank.ico" />
+    <Content Include="uncertainRecord\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="version.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="个人考勤记录\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="考勤汇总\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="考勤记录\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\prepared\" />
-    <Folder Include="bin\Debug\uncertainRecord\" />
-    <Folder Include="bin\Debug\个人考勤记录\" />
-    <Folder Include="bin\Debug\休息日制定\" />
-    <Folder Include="bin\Debug\考勤汇总\" />
-    <Folder Include="bin\Debug\考勤记录\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

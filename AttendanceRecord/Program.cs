@@ -31,7 +31,6 @@ namespace AttendanceRecord
         // =====================================================================
         #endregion
         public static User_Info _userInfo;
-        static XmlFlexflow xff = new XmlFlexflow();
         public static bool flag_open_mesSqlConn = false;
         /// <summary>
         /// 应用程序的主入口点。
@@ -39,11 +38,11 @@ namespace AttendanceRecord
         [STAThread]
         static void Main()
         {
-            
+            XmlFlexflow.configFilePath = Application.StartupPath + "\\flexflow.cfg";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            string ftpIPADDR = xff.ReadXmlNodeValue("FTP_IPADDR");
+            string ftpIPADDR = XmlFlexflow.ReadXmlNodeValue("FTP_IPADDR");
             //先测试是否可以ping通
             if (!ConnectByPing.pingTheAddress(ftpIPADDR))
             {
@@ -70,14 +69,14 @@ namespace AttendanceRecord
         static void doNext()
         {
             #region 数据库联接测试。
-            string host_Name = xff.ReadXmlNodeValue("SERVER_NAME");
-            string user_Id = xff.ReadXmlNodeValue("USER_ID");
-            string password = xff.ReadXmlNodeValue("PASSWORD");
+            string host_Name = XmlFlexflow.ReadXmlNodeValue("SERVER_NAME");
+            string user_Id = XmlFlexflow.ReadXmlNodeValue("USER_ID");
+            string password = XmlFlexflow.ReadXmlNodeValue("PASSWORD");
 
-            string mes_host_Name = xff.ReadXmlNodeValue("MES_SERVER_NAME");
-            string mes_db_Name = xff.ReadXmlNodeValue("MES_DATABASE_NAME");
-            string mes_user_Id = xff.ReadXmlNodeValue("MES_USER_ID");
-            string mes_password = xff.ReadXmlNodeValue("MES_PASSWORD");
+            string mes_host_Name = XmlFlexflow.ReadXmlNodeValue("MES_SERVER_NAME");
+            string mes_db_Name = XmlFlexflow.ReadXmlNodeValue("MES_DATABASE_NAME");
+            string mes_user_Id = XmlFlexflow.ReadXmlNodeValue("MES_USER_ID");
+            string mes_password = XmlFlexflow.ReadXmlNodeValue("MES_PASSWORD");
             //先测试是否可以ping通
             if (!ConnectByPing.pingTheAddress(host_Name))
             {
